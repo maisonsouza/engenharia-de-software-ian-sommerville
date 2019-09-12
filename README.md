@@ -75,7 +75,45 @@ trabalho para as próximas 24 horas. Isso otimiza a colaboração e a performanc
 inspeção do trabalho desde a última Reunião Diária, e da previsão do próximo trabalho da Sprint. A
 Reunião Diária é mantida no mesmo horário e local todo dia para reduzir a complexidade.
 
+Histórias do usuário são descrições curtas e simples de um
+recurso/objetivo contado a partir da perspectiva da pessoa que o
+deseja, geralmente, um usuário ou cliente.
 
+Sendo
+<persona>
+Quero/Gostaria
+<O que>
+Para / Para que
+<Motivo/Resultado>
+  
+  SENDO um usuário on-line GOSTARIA de ser capaz de
+simular um empréstimo pessoal em qualquer
+dispositivo móvel PARA encontrar e contratar um
+empréstimo de forma rápida e on-line.
+
+São histórias de usuário grandes e não refinadas
+
+Os critérios de aceitação fornecem clareza para o time sobre o
+que se espera de uma história do usuário, remove ambiguidades
+dos requisitos e contribui no alinhamento de expectativas
+
+
+BDD (Behavior Driven Development)
+§ Serve para criar testes e integrar regras de negócios com a linguagem
+de programação, focando no comportamento do software.
+§ Melhorar a comunicação entre as equipes de desenvolvimento e testes,
+aumentando o compartilhamento de conhecimento entre elas.
+
+
+Cenário: título
+Dado que [cenário atual]
+Quando [ação do usuário]
+Então [como o software vai reagir]
+
+Cenário 2: Estoque indisponível
+Dado que o estoque da coca-cola é de 50 unidades
+Quando informo uma venda de 60 unidades
+Então a venda não é registrada
 
 
 
