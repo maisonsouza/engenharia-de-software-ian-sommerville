@@ -119,24 +119,25 @@ Então a venda não é registrada
 ## Capítulo 8 -Testes de software
 
 * O teste é destinado a mostrar que um programa faz o que é proposto a fazer 
-e para descobrir os defeitos do programa antes do uso. 
-* O Processo de teste te dois objetivos: 
-  1 - Demonstrar ao desenvolvedor e ao cliente que o software atende aos requisitos. 
-  2 - Descobrir situações em que o software se comporta de maneira incorreta, indesejável ou de forma diferente 
-  das especificações.
-  
-* O primeiro objetivo leva a testes de validação, nos quais você espera que o sistema execute corretamente usando determinado 
-conjunto de casos de teste que refletem o uso esperado do sistema.
-* O segundo objetivo leva a testes de defeito, nos quais os casos de teste são projetados para expor os defeitos.
+e descobrir os defeitos do programa antes que ele seja colocado para uso. 
 
-Os testes não podem demonstrar se o software é livre de defeitos.(DIJKSTRA)
+* O Processo de teste tem dois objetivos: 
+  *1 - Demonstrar ao desenvolvedor e ao cliente que o software atende aos requisitos.* 
+  *2 - Descobrir situações em que o software se comporta de maneira incorreta, indesejável ou de forma diferente 
+  das especificações.*
+  
+* O primeiro objetivo leva a **testes de validação**, nos quais você espera que o sistema execute corretamente usando determinado 
+conjunto de casos de teste que refletem o uso esperado do sistema.
+* O segundo objetivo leva a **testes de defeito**, nos quais os casos de teste são projetados para expor os defeitos.
+
+**Os testes não podem demonstrar se o software é livre de defeitos.(DIJKSTRA)**
 
 O teste é parte de um amplo processo de verificação e validação.
-* Validação - estamos construindo o produto certo?
-* Verificação - estamos construindo o produto da maneira certa?
+* **Validação** - estamos construindo o produto certo?
+* **Verificação** - estamos construindo o produto da maneira certa?
 
 O objetivo da verificação é checar se o software atende a seus requisitos funcionais e não funcionais.
-O objetivo da validação é garantir que o software atenda as exepectativas do cliente.
+O objetivo da validação é garantir que o software atenda as expectativas do cliente.
 
 A validação é essencial porque nem sempre a especificação de requsitos reflete o desejo do cliente e usuários do sistema.
 
@@ -153,12 +154,14 @@ de programação que dificultará a manutenção e atualização.
 As inspeções de programa são uma idéia antiga e vários estudos e experimentos demonstraram que as inspeções são mais 
 eficazes na descoberta de defeitos do que os teste de programa.
 
-Geralmente o sistema de software comercual passa por três estágios:
+Geralmente o sistema de software comercial passa por três estágios:
 1 - Testes em desenvolvimento, em que o sistema é testado durante o desenvolvimento para descobrir bugs e defeitos
 Projetistas de sistemas e programadores podem estar envolvidos no processo.
-2 - Testes de release em que uma equipe de teste independente testa uma versão completa do sistema antes que ele seja 
+2 - Testes de lançamento (release) em que uma equipe de teste independente testa uma versão completa do sistema antes que ele seja 
 liberado para os usuários. O objetivo dos testes de release é verificar se os sistema atende aos requisitos dos stakeholders
 3 - Testes de usuário, em que os usuários ou potenciais usuários de um sistema testam o sistema em seu próprio ambiente.
+O teste de aceitação é um exemplo de teste de usuário em que o cliente testa formalmente o sistema para decidir se aceita ou se
+mais desenvolvimento será necessário.
 
 Teste manual - um testador executa o programa com alguns dados de teste e compara os resultados com suas expectativas, ele 
 anota e passa as discrepâncias aos desenvolvedores so programa.
@@ -168,6 +171,32 @@ Testes de regressão - reexecução de testes anteriores para verificar se as al
 
 
 ### Testes de desenvolvimento
+```
+Inclui todas as atividades de teste executadas pela equipe responsável pelo sistema.
+```
+* O testador do software geralmente é o programador que o desenvolveu.
+* Alguns processos de desenvolvimento usam pares programador-testador.
+
+* Existem três estágios de testes em desenvolvimento
+```
+1 - Teste de unidade - em que são testadas unidades do programa ou classes individuais. Esse tipo de teste deve se 
+concentrar em testar a funcionalidade dos objetos e seus métodos.
+2 - Teste de componentes - em que várias unidades são integradas, criando componentes compostos. Esse teste deve se concentrar
+em testar as interfaces dos componentes que promovem acesso as funções.
+3 - Teste de sistema - em que alguns ou todos os componentes em um sistema são integrados e o sistema é testado como um todo
+O teste de sistema deve se concentrar em testar as interações dos componentes. 
+```
+* O teste de desenvolvimento é basicamente um processo de teste dos defeitos cujo objetivo é descobrir bugs de software.
+Geralmente ele é intercalado com a depuração, processo de localizar problemas no código e alterar o programa para consertá-los.
+
+**Depuração**
+```
+É o processo de consertar erros e problemas que foram descobertos por meio de testes.
+Usando as informações dos testes de programa, os depuradores, aplicam seu conhecimento de linguagem de programação e o resultado
+esperado do teste para localizar e consertar o erro do programa.
+```
+
+
 
 ### Desenvolvimento dirigido a testes.
 
