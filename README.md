@@ -189,9 +189,9 @@ Inclui todas as atividades de teste executadas pela equipe responsável pelo sis
 * Existem três estágios de testes em desenvolvimento
 ```
 1 - Teste de unidade - em que são testadas unidades do programa ou classes individuais. Esse tipo de teste deve se 
-concentrar em testar a funcionalidade dos objetos e seus métodos.
+concentrar em testar a funcionalidade dos objetos e seus métodos.(Desenvolvedor)
 2 - Teste de componentes - em que várias unidades são integradas, criando componentes compostos. Esse teste deve se concentrar
-em testar as interfaces dos componentes que promovem acesso as funções.
+em testar as interfaces dos componentes que promovem acesso as funções.()
 3 - Teste de sistema - em que alguns ou todos os componentes em um sistema são integrados e o sistema é testado como um todo
 O teste de sistema deve se concentrar em testar as interações dos componentes. 
 ```
@@ -205,7 +205,41 @@ Usando as informações dos testes de programa, os depuradores, aplicam seu conh
 esperado do teste para localizar e consertar o erro do programa.
 ```
 
+#### Teste de unidade
+```
+É o processo de testar os componentes de programa, como os métodos ou as classes.
+```
+* As funções ou métodos são o tipo de componente mais simples.
+Esse teste consiste em chamadas para essas rotinas com diferentes parâmetros de entrada.
+* Sempre que possível o teste de software deve ser automatizado.
+* Um framework de automação de teste como o **JUnit** pode ser usado para escrever e executar testes do programa. Os fra
+meworks de teste de unidade fornecem cem classes de teste genéricas que podem ser estendidas para criar casos de teste
+específicos.
+* Um teste automatizado tem três partes:
+```
+1 - Uma parte de configuração, em que o sistema é iniciado com o caso de teste ou seja as entradas e saídas esperadas.
+2 - Uma parte da chamada, em que se chama o objeto ou o método a ser testado.
+3 - Uma parte de asserção, em que o resultado da chamada é comparado com o resultado previsto.
+```
+**Mock objects** são objetos com as mesma interface dos objetos externos que estão sendo utilizados, simulando sua funci
+onalidade.
 
+#### Escolhendo casos de teste de unidade
+```
+Testar é caro e demorado, então é importante escolher casos de teste de unidade eficazes. A eficácia, neste caso, signi
+fica duas coisas:
+1 - Os casos de testes devem mostrar que, quando utilizado conforme o esperado, o componente que está sendo testado faz
+o que deveria fazer;
+2 - Se houver defeitos no componente, eles devem ser revelados pelos casos de teste.
+```
+* Portanto, devem ser projetados dois tipos de teste:
+```
+Teste de partição - São identificadops grupos de entrada com características comuns que devem ser processadas da mesma
+maniera.Deve se escolher testes de dentro de cada um desses grupos.
+Teste baseado em diretriz - Nesse tipo de teste, diretrizes que refletem a experiência prévia com os tipos de erros que
+os programadores costumam cometer quando desenvolvem componentes são usadas para escolher ows casos de teste.
+```
+ 
 
 ### Desenvolvimento dirigido a testes.
 
