@@ -118,12 +118,17 @@ Então a venda não é registrada
 
 ## Capítulo 8 -Testes de software
 
-### Objetivo
-* O teste é destinado a mostrar que um programa faz o que é proposto a fazer 
-e descobrir os defeitos do programa antes que ele seja colocado para uso. 
+### Objetivos
+
+```
+Os testes pretendem mostrar que um programa faz o que foi destinado a fazer 
+e descobrir defeitos do programa antes que ele seja colocado para uso.
+```
 
 * O Processo de teste tem dois objetivos: 
-  *1 - Demonstrar ao desenvolvedor e ao cliente que o software atende aos requisitos.* 
+  
+  *1 - Demonstrar ao desenvolvedor e ao cliente que o software atende aos requisitos.*
+  
   *2 - Descobrir situações em que o software se comporta de maneira incorreta, indesejável ou de forma diferente 
   das especificações.*
   
@@ -133,15 +138,15 @@ determinado conjunto de casos de teste que refletem o uso esperado do sistema.
 
 **Os testes não podem demonstrar se o software é livre de defeitos.(DIJKSTRA)**
 
-O teste é parte de um amplo processo de verificação e validação.
+Os testes fazem parte processo mais amplo de verificação e validação.(V&V)
 * **Validação** - estamos construindo o produto certo? (Produto)
-* **Verificação** - estamos construindo o produto da maneira certa?(Processo)
+* **Verificação** - estamos construindo o produto corretamente?(Processo)
 
-O objetivo da verificação é checar se o software atende a seus requisitos funcionais e não funcionais.
-O objetivo da validação é garantir que o software atenda as expectativas do cliente.
+O objetivo da *verificação* é o processo de conferir se o software cumpre seus requisitos funcionais e não funcionais.
+O objetivo da *validação* é garantir que o software atenda as expectativas do cliente.
 
-A validação é essencial porque nem sempre a especificação de requsitos reflete o desejo do cliente e usuários do sistema.
-O teste é uma verificação dinâmica de Validação e Verificação (V&V)
+A *validação* é essencial porque nem sempre a especificação de requsitos reflete o desejo do cliente e usuários do sistema.
+O teste é uma verificação dinâmica de *Validação e Verificação* (V&V)
 * O objetivo final dos processos de verificação e validação é estabelecer a confiança de que o software está pronto,
 para seu propósito. Isso significa que o sistema deve ser bom o suficiente para seu intuito.
 
@@ -149,14 +154,14 @@ Atvidades estáticas de V&V
 - Inspeção e Revisão (código fonte)
 
 * Vantagens da inspeção de software:
-1 - Durante o teste, erros podem esconder outros erros.Como a inspeção é um processo estático, você não precisa se preocu
+1 - Durante o teste, erros podem esconder outros erros. Como a inspeção é um processo estático, você não precisa se preocu
 par com as interações entre os erros.
 2 - Podemos inspecionar sistemas incompletos sem custos adicionais.
 3 - Podem revelar outros problemas que impactam na qualidade como: ineficiências, algoritmos inadequados, estilo pobre
 de programação que dificultará a manutenção e atualização.
 
 As inspeções de programa são uma idéia antiga e vários estudos e experimentos demonstraram que as inspeções são mais 
-eficazes na de scoberta de defeitos do que os teste de programa.
+eficazes na descoberta de defeitos do que os teste de programa.
 
 Engano  -> Defeito -> Erro  -> Falha.
 Mistake -> Bug     -> Error -> Failure
@@ -241,11 +246,11 @@ os programadores costumam cometer quando desenvolvem componentes são usadas par
 ```
  
 
-### Desenvolvimento dirigido a testes.
+### Desenvolvimento dirigido por testes.
 
-### Testes de release.
+### Teste de lançamento.
 
-### Testes de usuário.
+### Teste de usuário.
 
 
 
